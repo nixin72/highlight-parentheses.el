@@ -48,8 +48,13 @@
   (when (fboundp 'hl-paren-color-update)
     (hl-paren-color-update)))
 
+(defvar hl-color-1 "#98c379")
+(defvar hl-color-2 "#61afef")
+(defvar hl-color-3 "#c678dd")
+(defvar hl-color-4 "#d19a66")
+
 (defcustom hl-paren-colors
-  '("firebrick1" "IndianRed1" "IndianRed3" "IndianRed4")
+  (list hl-color-1 hl-color-2 hl-color-3 hl-color-4)
   "List of colors for the highlighted parentheses.
 The list starts with the inside parentheses and moves outwards."
   :type '(choice (repeat color) function)
